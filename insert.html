@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excersize1</title>
+</head>
+<body>
+  <script>
+    let x = prompt("Enter a random number: ");
+    let m = x.toString();
+    let result = [m[0]];
+    for (let i = 1; i < m.length; i++) {
+        if ((m[i-1] % 2 === 0) && (m[i] % 2 === 0)) {
+            result.push("-",m[i]);
+        }
+        else {
+            result.push(m[i]);
+        }
+    }
+    document.write(result.join(""));
+  </script>
+</body>
+</html>

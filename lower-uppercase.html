@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let x = "HANOI University of Science and Technology"
+    x = x.split(' ');
+    console.log(x)
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] >= 'a' && x[i] <= 'z') {
+            x[i] = x[i].toUpperCase();
+        }else {
+            x[i] = x[i].toLowerCase();
+        }
+    }
+    x = x.join('');
+    console.log(x);
+  </script>
+</body>
+</html>
